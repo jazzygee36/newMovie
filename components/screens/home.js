@@ -1,15 +1,13 @@
 import React from "react";
 import { Button, Text, View } from "react-native";
 // import { Text, View } from "react-native-web";
+import { SearchBar } from "@rneui/themed";
 
 const Home = ({ navigation }) => {
   return (
     <View>
       <Text>Home page</Text>
-      <Button
-        title="Go to about"
-        onPress={() => navigation.navigate("About", { name: "Jane" })}
-      />
+      <SearchBar />
     </View>
   );
 };
